@@ -1,0 +1,97 @@
+/* Styl ogólny strony - Ciemny motyw */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #16161a; /* Bardzo ciemny szary/grafit */
+    color: #e4e4e6; /* Jasnoszary tekst, żeby nie raził po oczach jak czysty biały */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color-scheme: dark; /* Wymusza ciemny wygląd kalendarza */
+}
+
+/* Nagłówek (Header) */
+header {
+    background-color: #1e1e24; 
+    color: #f8c8d6; /* Delikatny różowy tekst */
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 2px solid #8a3a54; /* Akcent w kolorze zgaszonego różu/rubinu */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+h1 { margin: 0; font-size: 2.2rem; }
+#countdown { font-size: 1.5rem; margin-top: 10px; font-weight: bold; color: #e4e4e6; }
+
+/* Kontener główny */
+main {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+    padding: 3rem 1rem;
+    flex: 1;
+}
+
+/* Wygląd kart */
+.card {
+    background-color: #23232a; /* Odrobinę jaśniejsze tło dla kart */
+    border-top: 6px solid #8a3a54; /* Akcent - rubinowy róż */
+    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+h2 { color: #d67a96; font-size: 1.5rem; margin-top: 0;} /* Jasniejszy róż dla nagłówków */
+p { color: #b5b5ba; line-height: 1.5; }
+
+/* Formularze i elementy interaktywne */
+.cat-gif {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+form { display: flex; flex-direction: column; gap: 12px; }
+.checkbox-group { display: flex; align-items: center; gap: 10px; margin-bottom: 5px; }
+
+.form-label { margin-top: 15px; font-weight:bold; color: #d67a96; }
+
+input[type="text"], input[type="date"] {
+    background-color: #16161a;
+    color: #e4e4e6;
+    padding: 12px;
+    border: 1px solid #3f3f46;
+    border-radius: 6px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #8a3a54;
+}
+
+button {
+    background-color: #8a3a54; /* Zgaszony róż / rubin */
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+button:hover { background-color: #702f44; }
+button:active { transform: scale(0.98); }
+
+/* Stopka (Footer) */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1e1e24;
+    color: #b5b5ba;
+    margin-top: auto;
+    font-size: 0.9rem;
+    border-top: 1px solid #3f3f46;
+}
